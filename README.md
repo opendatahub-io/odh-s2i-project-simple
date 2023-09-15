@@ -86,7 +86,7 @@ Give other users access to the created project. https://github.com/{my-org}/{my-
    1. Click “Clone a Repository”
    1. Enter repository URL of the newly created GitHub repository (step 5 in Application Setup) and click “Clone”. Alternatively, a team could use a fork and pull request flow.
 1. Experiment with the data and create a prediction algorithm.  This is probably a very familiar task for data scientists.
-1. Open “Start Here” notebook (start_here.ipynb) that provides steps for experimentation with the goal of creating a prediction function.  (e.g. experiment, create function, test function)
+1. Open “Start Here” notebook (0_start_here.ipynb) that provides steps for experimentation with the goal of creating a prediction function.  (e.g. experiment, create function, test function)
 1. Extract prediction to a function in a Python file (prediction.py)
 The “Start Here” notebook includes instructions for extracting the function from the notebook into prediction.py.  Must be explanatory and easy to understand. In addition, we should offer sample prediction functions of popular libraries showing how to load serialized models from Python.
 User pulls only the necessary code into a separate function in prediction.py which is called from the flask app route handler.
