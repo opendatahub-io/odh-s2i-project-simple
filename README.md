@@ -43,7 +43,7 @@ oc new-project {project name}
 ```
 
 #### Create the OpenShift Application
-Create the application using the [web console](https://docs.okd.io/latest/applications/application_life_cycle_management/odc-creating-applications-using-developer-perspective.html#odc-importing-codebase-from-git-to-create-application_odc-creating-applications-using-developer-perspective) or the [CLI](https://docs.okd.io/latest/cli_reference/openshift_cli/developer-cli-commands.html#new-app)
+Create the application using the [web console](https://docs.okd.io/latest/applications/creating_applications/odc-creating-applications-using-developer-perspective.html#odc-importing-codebase-from-git-to-create-application_odc-creating-applications-using-developer-perspective) or the [CLI](https://docs.okd.io/latest/cli_reference/openshift_cli/developer-cli-commands.html#new-app)
 ```shell
 oc new-app https://github.com/{my-org}/{my-rhods-project}
 ```
