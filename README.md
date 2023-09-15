@@ -103,7 +103,7 @@ User pulls only the necessary code into a separate function in prediction.py whi
     !FLASK_APP=wsgi.py flask run
     ```
    1. Test the local Flask app (test_flask.ipynb provided) running on your notebook server.  Both curl commands and python code will be provided.
-!curl -X POST -H "Content-Type: application/json" --data '{"data": "hello world"}' http://localhost:5000/prediction
+!curl -X POST -H "Content-Type: application/json" --data '{"data": "hello world"}' http://localhost:5000/predictions
    1. Stop the flask app  when complete. (Click the stop button in run_flask.ipynb)
 1. Save code to GitHub using push.  Be sure to include all relevant models, prediction python files, and any pertinent notebooks.
    1. Click GitHub plugin
@@ -119,6 +119,6 @@ To test changes, the application must be rebuilt and redeployed.If a webhook was
 #### Test deployed application endpoint
 The application's service endpoint can be tested using cURL or python code from Jupyter notebooks or the terminal.
 ```
-!curl -X POST -H "Content-Type: application/json" --data '{"data": "hello world"}' http://rhods-project.apps.cluster/prediction
+!curl -X POST -H "Content-Type: application/json" --data '{"data": "hello world"}' http://rhods-project.apps.cluster/predictions
 ```
 
