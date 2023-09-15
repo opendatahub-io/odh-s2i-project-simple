@@ -37,20 +37,20 @@ oc login --token=sha256~XYZ --server=https://api.my-cluster:6443
 ```
 #### Create a new OpenShift Project
 Create a new project namespace.
-Full documentation [here](https://docs.okd.io/latest/cli_reference/openshift_cli/developer-cli-commands.html#new-project).
+Full documentation [here](https://docs.okd.io/latest/cli_reference/openshift_cli/developer-cli-commands.html#oc-new-project).
 ```shell
 oc new-project {project name}
 ```
 
 #### Create the OpenShift Application
-Create the application using the [web console](https://docs.okd.io/latest/applications/application_life_cycle_management/odc-creating-applications-using-developer-perspective.html#odc-importing-codebase-from-git-to-create-application_odc-creating-applications-using-developer-perspective) or the [CLI](https://docs.okd.io/latest/cli_reference/openshift_cli/developer-cli-commands.html#new-app)
+Create the application using the [web console](https://docs.okd.io/latest/applications/application_life_cycle_management/odc-creating-applications-using-developer-perspective.html#odc-importing-codebase-from-git-to-create-application_odc-creating-applications-using-developer-perspective) or the [CLI](https://docs.okd.io/latest/cli_reference/openshift_cli/developer-cli-commands.html#oc-new-app)
 ```shell
 oc new-app https://github.com/{my-org}/{my-rhods-project}
 ```
 Observe the new application workload as it is deployed.  This should included a Deployment, BuildConfig, and Service.  You can navigate to your newly created project and view the topology.
 
 #### Create a Route (Optional)
-To use the service endpoint externally, expose a route to the new endpoint.  This is included in the web console creation of applications but can be done using the [CLI](https://docs.okd.io/latest/cli_reference/openshift_cli/developer-cli-commands.html#expose)
+To use the service endpoint externally, expose a route to the new endpoint.  This is included in the web console creation of applications but can be done using the [CLI](https://docs.okd.io/latest/cli_reference/openshift_cli/developer-cli-commands.html#oc-expose)
 ```shell
 oc expose svc/{project service name}
 ```
